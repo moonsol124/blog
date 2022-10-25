@@ -1,0 +1,34 @@
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../imgs/blog_bg1.jpg');
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+/* Image by <a href="https://www.freepik.com/free-vector/abstract-hand-drawn-recipes-youtube-channel-art_13109020.htm#page=2&query=food&position=2&from_view=search&track=sph">Freepik</a> */
+.landing-texts {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quotes-texts {
+    font-size: 1.5rem;
+    font-style: italic;
+} 
+
+.quotes-owner {
+    text-align: end;
+}
+
+.quotes-owner-container {
+    width: 100%;
+}
