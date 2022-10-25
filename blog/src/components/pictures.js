@@ -28,7 +28,7 @@ function Pictures() {
             <ul className="pictures-ul">
                 {album.map(picture => {
                     return (
-                        <li key={uniqid()}>
+                        <li key={uniqid()} className="pictures-ul-outer-container">
                             <Picture title={picture.title} pictureId={picture['_id']} description={picture.description} date={picture.date} picture={picture.address}/>
                             <div className='comment-hr'></div>
                         </li>

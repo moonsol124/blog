@@ -35,23 +35,25 @@ function PostDetail(props) {
     }
     return (
         <div className="post-detail-container">
-            <div className="preview-img-container" >
-                <div className="preview-img" style={{backgroundImage: `url(${post.picture})`}}></div>
-            </div>
-            <div className="post-detail-header">
-                <p> Read </p>
-                <h1 className="post-detail-header-title">"{post.title}"</h1>
-                <p className="post-detail-header-author">By {post.author}</p>
-            </div>
-            <div className="post-detail-main">
-                <p>{post.content}</p>
-            </div>
-            <div className="post-detail-btn">
-                <Link to='/posts'><p className="link-texts">See other posts</p></Link>
-                <Link to={{pathname: `/post/${postid}/create_comment`}} state={{postid: postid, title: post.title, content: post.content}}><p className="link-texts">Leave a comment</p></Link>
-            </div>
-            <div>
-                <CommentSection postid={postid}/>
+            <div className="post-detail-inner-container">
+                <div className="post-detail-img-container" >
+                    <div className="preview-img" style={{backgroundImage: `url(${post.picture})`}}></div>
+                </div>
+                <div className="post-detail-header">
+                    <p> Read </p>
+                    <h1 className="post-detail-header-title">"{post.title}"</h1>
+                    <p className="post-detail-header-author">By {post.author}</p>
+                </div>
+                <div className="post-detail-main">
+                    <p>{post.content}</p>
+                </div>
+                <div className="post-detail-btn">
+                    <Link to='/posts'><p className="link-texts">See other posts</p></Link>
+                    <Link to={{pathname: `/post/${postid}/create_comment`}} state={{postid: postid, title: post.title, content: post.content}}><p className="link-texts">Leave a comment</p></Link>
+                </div>
+                <div>
+                    <CommentSection postid={postid}/>
+                </div>
             </div>
         </div>
     )

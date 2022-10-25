@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 /* Image by <a href="https://www.freepik.com/free-vector/abstract-hand-drawn-recipes-youtube-channel-art_13109020.htm#page=2&query=food&position=2&from_view=search&track=sph">Freepik</a> */
@@ -18,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+    max-width: 400px;
 }
 
 .quotes-texts {
